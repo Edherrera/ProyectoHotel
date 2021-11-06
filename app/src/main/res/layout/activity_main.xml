@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="376dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:text="Bienvenido a Ichitki"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="409dp"
+        android:layout_height="232dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/uribia_obelisco" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="355dp"
+        android:layout_height="223dp"
+        android:layout_marginStart="8dp"
+        android:textAlignment="gravity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.413"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="356dp"
+            android:layout_height="200dp"
+            android:text="Se trata de la antigua ranchería wayúu de Ichitki, que fue refundada con el nombre de Uribia, en 1935, en honor del caudillo liberal Rafael Uribe Uribe, de ahí que se llame la capital indígena de Colombia. Uribia está ubicada al norte del departamento de La Guajira. La mayoría de sus habitantes hacen parte del pueblo wayúu, que está en este territorio desde tiempos inmemoriales y es reconocido como propietario colectivo del gran resguardo indígena de la Alta y Media Guajira, que se extiende por el área rural.Es el municipio con el territorio de mayor superficie del departamento, al abarcar más de la tercera parte de su área. Lo más atractivo para los turistas es que en Uribia pueden vivir de cerca las costumbres de los indígenas wayúu. UbicaciónUribia es uno de los municipios de La Guajira, está a hora y media de Riohacha, la capital del departamento. ¿Cómo llegar? Para llegar desde Santa Marta hacia Uribia, se debe tomar un autobús en la Terminal de Transporte con destino a Riohacha, el tiquete tiene un precio promedio de 30.000 pesos y el recorrido toma unas cuatro horas. Una vez en la capital de La Guajira, se debe abordar uno de los jeeps que movilizan hasta Uribia, que pueden cobrar entre 15.000 y 20.000 pesos por el traslado que toma cerca de hora y media. Es importante acordar el precio con el conductor antes de abordar el vehículo 4x4. Conocer el Cabo de la VelaEl Cabo de la Vela es para muchos nacionales y extranjeros el destino top del departamento. En un terreno desértico lleno de paisajes increíbles y experiencias fantásticas. Las playas son de un azul intenso y las olas hacen que sean elegidas por los viajeros que practican kite surf. Allí no se puede dejar de visitar:  Playa Ojo de Agua: Llamada así gracias a un pozo de agua dulce que nacía allí y que se unía con el mar. Es una playa que parece más bien una piscina y destaca por su tranquilidad, por sus aguas pintadas de un azul cristalino profundo. Es una de las pocas playas donde es permitido bañarse."
+            android:textAlignment="gravity" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnSecondActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ir  a Hoteles"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="226dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Historia de Uribia, La Guajira"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
