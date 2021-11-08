@@ -10,8 +10,8 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hotel Uribia"
-        android:textSize="18dp"
+        android:text="Hotel Ichitki"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.047"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,22 +19,49 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="385dp"
-        android:layout_height="186dp"
+        android:layout_width="407dp"
+        android:layout_height="245dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8"
-        app:srcCompat="@drawable/descarga" />
+        app:srcCompat="@drawable/_0171109_144245" />
 
     <TextView
-        android:id="@+id/textView9"
-        android:layout_width="327dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="4dp"
-        android:text="Calle 14#08-30 (280,95 km) Uribia, Colombia  Celular  315 5668273"
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Deleitar a nuestros huéspedes ofreciéndoles no solo un servicio, sino un disfrute, a través de nuestro excelente ambiente que les resulta muy cálido y familiar. Conociendo también, aspectos de la fascinante cultura wayuu. DIRECCION Carrera 14C No. 9 - 62 Uribia, Guajira. CELULAR: 310 6397491"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/buttonIchitki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IR A SERVICIOS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btnImplicit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IR A SITIO WEB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonIchitki" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GALERIA DE IMAGENES"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnImplicit1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

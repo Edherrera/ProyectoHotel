@@ -9,7 +9,7 @@ import android.widget.TextView
 import android.widget.Toast
 
 class MainActivity_List : AppCompatActivity() {
-    val hotelNames = arrayListOf<String>("Hotel Uribia","Hotel Gran Colombia","Hotel Ichitki","Hotel Juyasirain") // 1. crear arreglo de datos
+    val hotelNames = arrayListOf<String>("Hotel Ichitki","Hotel Juyasirain","Hotel Uribia","Hotel Gran Colombia") // 1. crear arreglo de datos
     var adapter: ArrayAdapter<String>?= null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,26 +23,26 @@ class MainActivity_List : AppCompatActivity() {
             println("item: $listitem, index: $index, id: $id")
             val textview = listitem as TextView
             Toast.makeText(this, "Seleccionaste a ${textview.text}", Toast.LENGTH_SHORT).show()
-            openCharacterDetail("Hotel Uribia")
-            openCharacterDetail2("Hotel Juyasirain")
+            openCharacterDetail(hotelNames[index])
+
 
         }
 
     }
 
     fun openCharacterDetail(name: String){
-        val detailIntent = Intent(this, MainActivity3::class.java)
-        startActivity(detailIntent)
+        if (name== "Hotel Ichitki"){
+            val detailIntent = Intent(this, MainActivity3::class.java)
+            startActivity(detailIntent)
+        } else {
+            val detailIntent = Intent(this, MainActivity2::class.java)
+            startActivity(detailIntent)
+        }
 
 
     }
 
-    fun openCharacterDetail2(name: String){
-        val detailIntent = Intent(this, MainActivity2::class.java)
-        startActivity(detailIntent)
 
-
-    }
 
 
 
