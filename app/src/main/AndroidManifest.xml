@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppIchitki">
         <activity
+            android:name=".MainServicioJuyasirain"
+            android:exported="false" />
+        <activity
+            android:name=".MainHotelUribia"
+            android:exported="false" />
+        <activity
             android:name=".MainServicioIchitki"
             android:exported="false" />
         <activity

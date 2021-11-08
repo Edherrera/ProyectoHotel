@@ -10,18 +10,19 @@
         android:id="@+id/textView5"
         android:layout_width="170dp"
         android:layout_height="27dp"
-        android:layout_marginStart="8dp"
         android:text="Hotel Juyasirain"
         android:textAlignment="gravity"
         android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="346dp"
-        android:layout_height="171dp"
-        android:layout_marginStart="8dp"
+        android:layout_width="408dp"
+        android:layout_height="230dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView5"
         app:srcCompat="@drawable/hotel1" />
@@ -30,10 +31,10 @@
         android:id="@+id/textView7"
         android:layout_width="312dp"
         android:layout_height="41dp"
-        android:layout_marginTop="8dp"
         android:text="Dirección: Diagonal 2 # 2b1  Tel. (310) 734-0654 Municipio: Uribia, La Guajira. Colombia"
         android:textAlignment="gravity"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.161"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
@@ -41,10 +42,38 @@
         android:id="@+id/btnActividadTres"
         android:layout_width="147dp"
         android:layout_height="42dp"
-        android:text="Ver mas"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="IR A SERVICIO"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/buttonWebJuya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IR A SITIO WEB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnActividadTres" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VER GALERIA DE IMAGENES"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonWebJuya" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="409dp"
+        android:layout_height="102dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button4"
+        app:layout_constraintVertical_bias="0.989"
+        app:srcCompat="@drawable/juyasirain3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

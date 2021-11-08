@@ -31,11 +31,19 @@ class MainActivity_List : AppCompatActivity() {
     }
 
     fun openCharacterDetail(name: String){
-        if (name== "Hotel Ichitki"){
+
+        if (name== "Hotel Ichitki") {
             val detailIntent = Intent(this, MainActivity3::class.java)
             startActivity(detailIntent)
-        } else {
+        }
+
+        if (name== "Hotel Juyasirain"){
             val detailIntent = Intent(this, MainActivity2::class.java)
+            startActivity(detailIntent)
+        }
+
+        if (name== "Hotel Uribia"){
+            val detailIntent = Intent(this, MainServicioJuyasirain::class.java)
             startActivity(detailIntent)
         }
 

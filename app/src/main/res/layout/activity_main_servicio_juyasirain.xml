@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainServicioIchitki">
+    tools:context=".MainServicioJuyasirain">
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nuestros Servicios"
@@ -17,31 +17,31 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="411dp"
-        android:layout_height="315dp"
+        android:id="@+id/imageView7"
+        android:layout_width="409dp"
+        android:layout_height="335dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        app:srcCompat="@drawable/ichitki2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:srcCompat="@drawable/juyasirain2" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/textView13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nuestras instalaciones cuentan con la mejor comida de la zona para todo tipo de huesped - cuentan con televisión por cable para cada habitación -  Nuestras instalaciones cuentan con aire acondionado para cada habitación - Nuestras instalaciones cuentan con la conexión Wi-fi de buena calidad - Nuestras instalaciones cuentan con un acogedor salón de eventos - Nuestras instalaciones cuentan con cómodas habitaciones"
+        android:text="Servicio de parqueadero. Atencion al publico me parecio buena, el clima es calido, esta cerca el centro de cultura de uribia, pueden salir en las noches a caminar sin ningun problema, les reomiendo no beber agua de la llave, el hotel es mas colonial que de lujo, aun asi la atencion es buena. tienen wifi"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ESCOGER SERVICIO"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
 </androidx.constraintlayout.widget.ConstraintLayout>
