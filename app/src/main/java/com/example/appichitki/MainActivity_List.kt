@@ -32,26 +32,36 @@ class MainActivity_List : AppCompatActivity() {
 
     fun openCharacterDetail(name: String){
 
-        if (name== "Hotel Ichitki") {
-            val detailIntent = Intent(this, MainActivity3::class.java)
-            startActivity(detailIntent)
+        when (name) {
+            "Hotel Ichitki" -> {
+                val detailIntent = Intent(this, MainActivity3::class.java)
+                startActivity(detailIntent)
+            }
         }
 
-        if (name== "Hotel Juyasirain"){
-            val detailIntent = Intent(this, MainActivity2::class.java)
-            startActivity(detailIntent)
+        when (name) {
+            "Hotel Juyasirain" -> {
+                val detailIntent = Intent(this, MainActivity2::class.java)
+                startActivity(detailIntent)
+            }
         }
 
-        if (name== "Hotel Uribia"){
-            val detailIntent = Intent(this, MainServicioJuyasirain::class.java)
-            startActivity(detailIntent)
+        when (name) {
+            "Hotel Uribia" -> {
+                val detailIntent = Intent(this, MainHotelUribiaG::class.java)
+                startActivity(detailIntent)
+            }
+        }
+
+        when (name) {
+            "Hotel Gran Colombia" -> {
+                val detailIntent = Intent(this, MainGranColombia::class.java)
+                startActivity(detailIntent)
+            }
         }
 
 
     }
-
-
-
 
 
 
