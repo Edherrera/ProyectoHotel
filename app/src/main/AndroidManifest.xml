@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppIchitki">
         <activity
+            android:name=".MainServicioUribia"
+            android:exported="false" />
+        <activity
             android:name=".MainGranColombia"
             android:exported="false" />
         <activity

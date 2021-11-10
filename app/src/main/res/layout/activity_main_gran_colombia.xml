@@ -30,7 +30,8 @@
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="El HOTEL GRAN COLOMBIA cuenta con habitaciones confortables con aire acondicionado,ventilador, directv, wifi, tv led, baño privado con agua dulce."
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView10" />

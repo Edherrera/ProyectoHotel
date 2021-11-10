@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainServicioJuyasirain">
+    tools:context=".MainServicioUribia">
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nuestros Servicios"
@@ -17,31 +17,31 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="409dp"
-        android:layout_height="335dp"
+        android:id="@+id/imageView11"
+        android:layout_width="415dp"
+        android:layout_height="319dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"
-        app:srcCompat="@drawable/juyasirain2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        app:srcCompat="@drawable/uribia10" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Servicio de parqueadero. Atencion al publico me parecio buena, el clima es calido, esta cerca el centro de cultura de uribia, pueden salir en las noches a caminar sin ningun problema, les reomiendo no beber agua de la llave, el hotel es mas colonial que de lujo, aun asi la atencion es buena. tienen wifi"
+        android:text="Buena atención, hotel limpio, agradable, con servicio de parqueadero, cerca del centro de la ciudad, buen lugar para descansar, no incluye desayuno, las habitaciones cómodas, sector seguro, tienes habitaciones con aire acondionado o ventilador. Direccion: Calle 14, 08 - 30, Uribia Colombia"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/button8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="VER SERVICIOS"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
 </androidx.constraintlayout.widget.ConstraintLayout>

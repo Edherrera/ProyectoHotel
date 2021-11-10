@@ -20,7 +20,7 @@ class MainHotelUribiaG : AppCompatActivity() {
     }
 
     fun goToSecondActivityUribia() {
-        val secondIntent = Intent(this,MainServicioJuyasirain::class.java)
+        val secondIntent = Intent(this,MainServicioUribia::class.java)
         secondIntent.putExtra("MISDATOS", "El valor que quiero pasar a la otra actividad")
         startActivity(secondIntent)
         Toast.makeText(this, " Bienvenido a Hotel Juyasirain!!!", Toast.LENGTH_LONG).show()
@@ -28,7 +28,7 @@ class MainHotelUribiaG : AppCompatActivity() {
 
 
     fun gotoUribia(){
-        val implicitIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.tripadvisor.co/Hotel_Review-g2440191-d2701993-Reviews-Hotel_Juyasirain-Uribia_La_Guajira_Department.html"))
+        val implicitIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.tripadvisor.co/Hotel_Review-g2440191-d12392330-Reviews-Hotel_Uribia-Uribia_La_Guajira_Department.html"))
         startActivity(implicitIntent)
 
     }
