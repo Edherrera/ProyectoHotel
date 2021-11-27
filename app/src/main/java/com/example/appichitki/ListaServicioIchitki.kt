@@ -1,6 +1,7 @@
 package com.example.appichitki
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ArrayAdapter
@@ -10,7 +11,7 @@ import android.widget.Toast
 
 class ListaServicioIchitki : AppCompatActivity() {
 
-    val hotelNames = arrayListOf<String>("Restaurante","Habitaciones","Parqueadero","Eventos") // 1. crear arreglo de datos
+    val hotelNames = arrayListOf<String>("Restaurante","Habitacion","Parqueadero","Eventos") // 1. crear arreglo de datos
     var adapter: ArrayAdapter<String>?= null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,30 +38,30 @@ class ListaServicioIchitki : AppCompatActivity() {
     fun openCharacterDetail2(name: String){
 
         when (name) {
-            "Hotel Ichitki" -> {
-                val detailIntent = Intent(this, MainActivity3::class.java)
-                startActivity(detailIntent)
+            "Restaurante" -> {
+                val implicitIntent = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.hotelichitki.com/index.php/servicios#"))
+                startActivity(implicitIntent)
             }
         }
 
         when (name) {
-            "Hotel Juyasirain" -> {
-                val detailIntent = Intent(this, MainActivity2::class.java)
-                startActivity(detailIntent)
+            "Habitacion" -> {
+                val implicitIntent = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.hotelichitki.com/index.php/contacto"))
+                startActivity(implicitIntent)
             }
         }
 
         when (name) {
-            "Hotel Uribia" -> {
-                val detailIntent = Intent(this, MainHotelUribiaG::class.java)
-                startActivity(detailIntent)
+            "Parqueadero" -> {
+                val implicitIntent = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.hotelichitki.com/index.php/contacto"))
+                startActivity(implicitIntent)
             }
         }
 
         when (name) {
-            "Hotel Gran Colombia" -> {
-                val detailIntent = Intent(this, MainGranColombia::class.java)
-                startActivity(detailIntent)
+            "Eventos" -> {
+                val implicitIntent = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.hotelichitki.com/index.php/contacto"))
+                startActivity(implicitIntent)
             }
         }
 
