@@ -36,7 +36,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnSecondActivity2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ESCOGER SERVICIO"
