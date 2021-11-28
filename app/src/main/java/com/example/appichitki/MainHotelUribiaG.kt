@@ -23,7 +23,7 @@ class MainHotelUribiaG : AppCompatActivity() {
         val secondIntent = Intent(this,MainServicioUribia::class.java)
         secondIntent.putExtra("MISDATOS", "El valor que quiero pasar a la otra actividad")
         startActivity(secondIntent)
-        Toast.makeText(this, " Bienvenido a Hotel Juyasirain!!!", Toast.LENGTH_LONG).show()
+        Toast.makeText(this, " Bienvenido a Hotel Uribia!!!", Toast.LENGTH_LONG).show()
     }
 
 

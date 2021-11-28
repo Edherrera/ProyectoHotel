@@ -4,10 +4,7 @@ import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ArrayAdapter
-import android.widget.ListView
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 
 class ListaServicioIchitki : AppCompatActivity() {
 
@@ -17,7 +14,16 @@ class ListaServicioIchitki : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lista_servicio_ichitki)
-
+        val ratingforapp = findViewById<RatingBar>(R.id.ratingBar)
+        //val textViewPuntaje = findViewById<TextView>(R.id.textViewPuntaje)
+        ratingforapp.setOnRatingBarChangeListener { ratinBar, fl, b ->
+            //textViewPuntaje.text = fl.toString()
+            Toast.makeText(this, "Tu calificacíón para Ichitki es: ${fl}!!", Toast.LENGTH_LONG).show()
+            val intent: Intent = Intent (this, MainActivity3::class.java)
+            //intent.putExtra
+            startActivity(intent)
+            finish()
+        }
 
         adapter = ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, hotelNames) // 2. crear un adapter usando el arreglo de datos
         val simpsonsListView = findViewById<ListView>(R.id.hotelList2)
