@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainServicioUribia">
+    tools:context=".MainServicioGranc">
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/textView25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nuestros Servicios"
@@ -17,44 +17,43 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView11"
-        android:layout_width="415dp"
-        android:layout_height="319dp"
+        android:id="@+id/imageView13"
+        android:layout_width="413dp"
+        android:layout_height="240dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView18"
-        app:srcCompat="@drawable/uribia10" />
+        app:layout_constraintTop_toBottomOf="@+id/textView25"
+        app:srcCompat="@drawable/grancolombia3" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/textView26"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Buena atención, hotel limpio, agradable, con servicio de parqueadero, cerca del centro de la ciudad, buen lugar para descansar, no incluye desayuno, las habitaciones cómodas, sector seguro, tienes habitaciones con aire acondionado o ventilador. Direccion: Calle 14, 08 - 30, Uribia Colombia"
+        android:text="El HOTEL GRAN COLOMBIA cuenta con habitaciones confortables con aire acondicionado,ventilador, directv, wifi, tv led, baño privado con agua dulce"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView11" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
 
     <TextView
-        android:id="@+id/textView24"
+        android:id="@+id/textView27"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:text="Califique el hotel!!!"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
 
     <RatingBar
-        android:id="@+id/ratingBar3"
+        android:id="@+id/ratingBar4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView24"
-        app:layout_constraintVertical_bias="0.047" />
-
+        app:layout_constraintTop_toBottomOf="@+id/textView27"
+        app:layout_constraintVertical_bias="0.039" />
 </androidx.constraintlayout.widget.ConstraintLayout>

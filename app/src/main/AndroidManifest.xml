@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppIchitki">
         <activity
+            android:name=".MainServicioGranc"
+            android:exported="false" />
+        <activity
             android:name=".ListaServicioIchitki"
             android:exported="false" />
         <activity
