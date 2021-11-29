@@ -8,9 +8,8 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="376dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="380dp"
+        android:layout_height="35dp"
         android:text="Bienvenido a Ichitki"
         android:textAlignment="center"
         android:textSize="20sp"
@@ -20,8 +19,8 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="409dp"
-        android:layout_height="232dp"
+        android:layout_width="410dp"
+        android:layout_height="310dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
@@ -29,8 +28,8 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="355dp"
-        android:layout_height="223dp"
+        android:layout_width="359dp"
+        android:layout_height="184dp"
         android:layout_marginStart="8dp"
         android:textAlignment="gravity"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,7 +41,7 @@
             android:id="@+id/textView2"
             android:layout_width="356dp"
             android:layout_height="200dp"
-            android:text="Se trata de la antigua ranchería wayúu de Ichitki, que fue refundada con el nombre de Uribia, en 1935, en honor del caudillo liberal Rafael Uribe Uribe, de ahí que se llame la capital indígena de Colombia. Uribia está ubicada al norte del departamento de La Guajira. La mayoría de sus habitantes hacen parte del pueblo wayúu, que está en este territorio desde tiempos inmemoriales y es reconocido como propietario colectivo del gran resguardo indígena de la Alta y Media Guajira, que se extiende por el área rural.Es el municipio con el territorio de mayor superficie del departamento, al abarcar más de la tercera parte de su área. Lo más atractivo para los turistas es que en Uribia pueden vivir de cerca las costumbres de los indígenas wayúu. UbicaciónUribia es uno de los municipios de La Guajira, está a hora y media de Riohacha, la capital del departamento. ¿Cómo llegar? Para llegar desde Santa Marta hacia Uribia, se debe tomar un autobús en la Terminal de Transporte con destino a Riohacha, el tiquete tiene un precio promedio de 30.000 pesos y el recorrido toma unas cuatro horas. Una vez en la capital de La Guajira, se debe abordar uno de los jeeps que movilizan hasta Uribia, que pueden cobrar entre 15.000 y 20.000 pesos por el traslado que toma cerca de hora y media. Es importante acordar el precio con el conductor antes de abordar el vehículo 4x4. Conocer el Cabo de la VelaEl Cabo de la Vela es para muchos nacionales y extranjeros el destino top del departamento. En un terreno desértico lleno de paisajes increíbles y experiencias fantásticas. Las playas son de un azul intenso y las olas hacen que sean elegidas por los viajeros que practican kite surf. Allí no se puede dejar de visitar:  Playa Ojo de Agua: Llamada así gracias a un pozo de agua dulce que nacía allí y que se unía con el mar. Es una playa que parece más bien una piscina y destaca por su tranquilidad, por sus aguas pintadas de un azul cristalino profundo. Es una de las pocas playas donde es permitido bañarse."
+            android:text="Se trata de la antigua ranchería wayúu de Ichitki, que fue refundada con el nombre de Uribia, en 1935, en honor del caudillo liberal Rafael Uribe Uribe, de ahí que se llame la capital indígena de Colombia. Uribia está ubicada al norte del departamento de La Guajira. La mayoría de sus habitantes hacen parte del pueblo wayúu, que está en este territorio desde tiempos inmemoriales y es reconocido como propietario colectivo del gran resguardo indígena de la Alta y Media Guajira, que se extiende por el área rural.Es el municipio con el territorio de mayor superficie del departamento, al abarcar más de la tercera parte de su área. Lo más atractivo para los turistas es que en Uribia pueden vivir de cerca las costumbres de los indígenas wayúu. UbicaciónUribia es uno de los municipios de La Guajira, está a hora y media de Riohacha, la capital del departamento. ¿Cómo llegar? Para llegar desde Santa Marta hacia Uribia, se debe tomar un autobús en la Terminal de Transporte con destino a Riohacha, el tiquete tiene un precio promedio de 30.000 pesos y el recorrido toma unas cuatro horas. Una vez en la capital de La Guajira, se debe abordar uno de los jeeps que movilizan hasta Uribia, que pueden cobrar entre 15.000 y 20.000 pesos por el traslado que toma cerca de hora y media. Es importante acordar el precio con el conductor antes de abordar el vehículo 4x4. Conocer el Cabo de la VelaEl Cabo de la Vela es para muchos nacionales y extranjeros el destino top del departamento. En un terreno desértico lleno de paisajes increíbles y experiencias fantásticas. Las playas son de un azul intenso y las olas hacen que sean elegidas por los viajeros que practican kite surf. Allí no se puede dejar de visitar:  Playa Ojo de Agua: Llamada así gracias a un pozo de agua dulce que nacía allí y que se unía con el mar. "
             android:textAlignment="gravity" />
 
     </ScrollView>
@@ -54,7 +53,8 @@
         android:text="Ir  a Hoteles"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
 
     <TextView
         android:id="@+id/textView3"

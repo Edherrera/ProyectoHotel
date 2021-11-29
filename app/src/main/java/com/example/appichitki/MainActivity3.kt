@@ -14,9 +14,11 @@ class MainActivity3 : AppCompatActivity() {
         setContentView(R.layout.activity_main3)
         val btnImpliciIchitki = findViewById<Button>(R.id.btnImplicit1)
         val buttonIchitki = findViewById<Button>(R.id.buttonIchitki)
+        val btnGaleria = findViewById<Button>(R.id.btnGaleria)
 
         btnImpliciIchitki.setOnClickListener { gotoIchitki() }
         buttonIchitki.setOnClickListener { irichitki() }
+        btnGaleria.setOnClickListener { irGaleria() }
 
     }
 
@@ -32,5 +34,12 @@ class MainActivity3 : AppCompatActivity() {
         val implicitIntent = Intent(Intent.ACTION_VIEW, Uri.parse("http://www.hotelichitki.com/"))
         startActivity(implicitIntent)
 
+    }
+
+    fun irGaleria() {
+        val secondIntent = Intent(this,MainGaleriaIchitki::class.java)
+        secondIntent.putExtra("MISDATOS", "El valor que quiero pasar a la otra actividad")
+        startActivity(secondIntent)
+        Toast.makeText(this, "Galeria al Hotel Ichitki!!!", Toast.LENGTH_LONG).show()
     }
 }

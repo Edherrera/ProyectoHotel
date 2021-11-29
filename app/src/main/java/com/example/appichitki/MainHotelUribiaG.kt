@@ -13,10 +13,11 @@ class MainHotelUribiaG : AppCompatActivity() {
         setContentView(R.layout.activity_main_hotel_uribiag)
         val btnImpliciUribia = findViewById<Button>(R.id.buttonIrWeb)
         val btnSecond = findViewById<Button>(R.id.buttonSerUribia)
+        val btnGaleria = findViewById<Button>(R.id.btnGaleriaUri)
 
         btnSecond.setOnClickListener { goToSecondActivityUribia() }
         btnImpliciUribia.setOnClickListener { gotoUribia() }
-
+        btnGaleria.setOnClickListener { irGaleria() }
     }
 
     fun goToSecondActivityUribia() {
@@ -31,5 +32,12 @@ class MainHotelUribiaG : AppCompatActivity() {
         val implicitIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://www.tripadvisor.co/Hotel_Review-g2440191-d12392330-Reviews-Hotel_Uribia-Uribia_La_Guajira_Department.html"))
         startActivity(implicitIntent)
 
+    }
+
+    fun irGaleria() {
+        val secondIntent = Intent(this,MainGaleriaUribia::class.java)
+        secondIntent.putExtra("MISDATOS", "El valor que quiero pasar a la otra actividad")
+        startActivity(secondIntent)
+        Toast.makeText(this, "Galeria al Hotel Uribia!!!", Toast.LENGTH_LONG).show()
     }
 }

@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppIchitki">
         <activity
+            android:name=".MainGaleriaGran"
+            android:exported="false" />
+        <activity
+            android:name=".MainGaleriaUribia"
+            android:exported="false" />
+        <activity
+            android:name=".MainGaleriaJuyasirain"
+            android:exported="false" />
+        <activity
+            android:name=".MainGaleriaIchitki"
+            android:exported="false" />
+        <activity
             android:name=".MainServicioGranc"
             android:exported="false" />
         <activity

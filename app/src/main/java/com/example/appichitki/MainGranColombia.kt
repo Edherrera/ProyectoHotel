@@ -13,9 +13,11 @@ class MainGranColombia : AppCompatActivity() {
         setContentView(R.layout.activity_main_gran_colombia)
         val btnImpliciUribia = findViewById<Button>(R.id.buttonIrWebGran)
         val btnSecond = findViewById<Button>(R.id.buttonSerGranc)
+        val btnGaleria = findViewById<Button>(R.id.btnGaleriaGran)
 
         btnSecond.setOnClickListener { goToSecondActivityGranc() }
         btnImpliciUribia.setOnClickListener { gotoGranc() }
+        btnGaleria.setOnClickListener { irGaleria() }
 
     }
 
@@ -31,5 +33,12 @@ class MainGranColombia : AppCompatActivity() {
         val implicitIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://es-la.facebook.com/hotel1enuribia/"))
         startActivity(implicitIntent)
 
+    }
+
+    fun irGaleria() {
+        val secondIntent = Intent(this,MainGaleriaGran::class.java)
+        secondIntent.putExtra("MISDATOS", "El valor que quiero pasar a la otra actividad")
+        startActivity(secondIntent)
+        Toast.makeText(this, "Galeria al Hotel Gran colombia!!!", Toast.LENGTH_LONG).show()
     }
 }
